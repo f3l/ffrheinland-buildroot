@@ -47,7 +47,8 @@ app.BaseConfigView = Backbone.View.extend({
   },
 
   save: function () {
-    //TODO: save given values
+    var config = this.$el.find("form").serializeArray();
+    app.util.config.update(config);
   }
 
 });

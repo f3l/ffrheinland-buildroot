@@ -49,11 +49,23 @@
           fn("/config/" + mode, data).success(success);
         };
         return {
-          update: function updateConfig ( option, value, success ) {
-            client("update", {
-              option: option,
-              value: value
-            }, success);
+          update: function updateConfig ( config, success ) {
+            console.log("updating config with:");
+            console.dir(config);
+            if(_.isArray(config)) {
+              _.each(config, function(c) {
+                client("update", {
+                  option: c.name,
+                  value: c.value
+                }, success);
+              })
+            }
+            else {
+              client("update", {
+                option: config.name,
+                value: config.value
+              }, success);
+            }
           },
 
           read: function readConfig ( option, success ) {
