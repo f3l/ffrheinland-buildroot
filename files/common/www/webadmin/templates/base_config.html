@@ -6,13 +6,29 @@
       <form class=nice action=".">
         <fieldset>
           <legend>Grundlegende Einstellungen deines Freifunk Routers</legend>
+
           <label class=control-label for=name>Routername</label>
           <input type=text class=input-text name=name id=name>
-
           <p class=help-block>wie soll dein Router heissen</p>
+
+          <label class=control-label for=owner>Besitzer</label>
+          <input type=text class=input-text name=owner id=owner>
+          <p class=help-block>der Name des Besitzers, normalerweise bist Du das</p>
+
+          <label class=control-label for=godfather>Pate</label>
+          <input type=text class=input-text name=godfather id=godfather>
+          <p class=help-block>der Router Pate, der von dem Du den Router bekommen hast</p>
+
+          <label class=control-label for=position>Position</label>
+          <input type=text class=input-text name=position id=position>
+          <p class=help-block>Breiten- und Längengrad wo der Router steht, z.B. 51.123,6.123</p>
 
           <label class=control-label for=description>Beschreibung</label>
           <textarea class="input-text last" name=description id=description rows=3 cols=5></textarea>
+          <p class=help-block>
+            eine kleine Beschreibung deines Routers<br>
+            z.B. wo er steht.
+          </p>
         </fieldset>
 
         <div class=form-actions>
@@ -26,7 +42,12 @@
     <div class="well help">
       <h5>Hilfe</h5>
 
-      <p>Hilfe foo text</p>
+      <p>
+        Hier stellst Du die wichtigesten Einstellungen deines
+        Freifunk Routers ein. Beachte die Hilfetext unter den Eingabefeldern,
+        falls Du sonst noch Fragen oder Probleme hast frage im Channel oder auf
+        der Mailingliste nach.
+      </p>
     </div>
   </div>
 </div>

@@ -84,8 +84,8 @@
       app.WebadminRouter = Backbone.Router.extend({
 
         routes: {
-          "": "login",
-          "!baseConfig": "baseConfig"
+          "": "baseConfig",
+          "!login": "login"
         },
 
         login: function () {
