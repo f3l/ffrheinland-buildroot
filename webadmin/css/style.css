@@ -81,6 +81,8 @@ footer {
 
 .help.well {
   background-color: #ffa1c2;
+  position: fixed;
+  max-width: 297px;
 }
 
 form.nice button.button {
