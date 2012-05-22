@@ -1,0 +1,9 @@
+config edge
+	option ipaddr		'1.2.3.4'
+	option supernode	'freifunk.f3l.de'
+	option port		'31337'
+	option community	'ffpegde1'
+	option key		'ffpegde1'
+	option devname		'n2n1'
+	option route		''
+

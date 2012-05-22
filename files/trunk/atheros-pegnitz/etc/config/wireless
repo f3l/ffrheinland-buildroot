@@ -1,0 +1,22 @@
+config wifi-device  wifi0
+	option type atheros
+	option channel	3
+	option country	276
+	option txpower	20
+
+config wifi-iface
+ option device wifi0
+ option mode adhoc
+ option network adhoc
+ option ssid batman.pegnitz.freifunk.net
+ option bssid  44:03:DE:AD:BE:EF
+ option hidden 0
+ option encryption none
+
+config wifi-iface
+ option device 'wifi0'
+ option network 'mesh'
+ option mode 'ap'
+ option encryption 'none'
+ option wmm '0'
+ option ssid 'pegnitz.freifunk.net'
